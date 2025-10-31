@@ -31,15 +31,14 @@ OpenGL 초기 실습.
 
 사용 기술: OpenGL, GLSL(Vertex/Fragment Shader), GLFW><br><br>
 
-![](./HW0405/박민정_과제12.png)
-
+<img src="./HW0405/박민정_과제12.png" width="50%" alt="스크린샷" />
 🗂️ week06
 
 카메라 궤도(orbit) 및 투영 행렬 계산 실습.
 glm::lookAt, glm::perspective를 활용한 3D 카메라 제어.
 
 사용 기술: OpenGL, GLM, Shader, Orbit Camera Model><br><br>
-![](./HW06/과제18.png)
+<img src="./HW06/과제18.png" width="50%" alt="스크린샷" />
 
 🗂️ HW07
 
@@ -47,4 +46,4 @@ glm::lookAt, glm::perspective를 활용한 3D 카메라 제어.
 조명(Lambert, Phong), 반사, 회전, 3D 모델 렌더링 구현.
 
 사용 기술: OpenGL, GLSL Shader, GLM, 3D Model Loader(bunny.j3a)><br><br>
-![](./HW07/과제19.png)
+<img src="./HW07/과제19.png" width="50%" alt="스크린샷" />
