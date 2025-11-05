@@ -50,6 +50,6 @@ glm::lookAt, glm::perspective를 활용한 3D 카메라 제어.
 
 HW09
 
-🐇 Hidden Surface Removal & Depth Buffer 적용 과제 — 정점 노멀을 활용한 3D 모델 렌더링(버니), Z-buffer 기반 가려짐 제거 및 안티앨리어싱 적용.
+🐇 Hidden Surface Removal & Depth Buffer 적용 과제 — 정점 노멀을 활용한 3D 모델 렌더링(버니), Z-buffer 기반 가려짐 제거 및 안티앨리어싱 적용. <br><br>
 <img src="./HW09/과제23.png" width="50%" alt="스크린샷" />
 <img src="./HW09/과제24.png" width="50%" alt="스크린샷" />
