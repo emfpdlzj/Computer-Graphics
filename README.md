@@ -48,8 +48,12 @@ glm::lookAt, glm::perspective를 활용한 3D 카메라 제어.
 사용 기술: OpenGL, GLSL Shader, GLM, 3D Model Loader(bunny.j3a)><br><br>
 <img src="./HW07/과제19.png" width="50%" alt="스크린샷" />
 
-HW09
+🗂️ HW09
 
 🐇 Hidden Surface Removal & Depth Buffer 적용 과제 — 정점 노멀을 활용한 3D 모델 렌더링(버니), Z-buffer 기반 가려짐 제거 및 안티앨리어싱 적용. <br><br>
 <img src="./HW09/과제23.png" width="50%" alt="스크린샷" />
 <img src="./HW09/과제24.png" width="50%" alt="스크린샷" />
+
+🗂️ HW10
+Gamma Correction 구현 
+<img src="./HW10/과제27.png" width="50%" alt="스크린샷" />
