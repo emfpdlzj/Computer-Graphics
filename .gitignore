@@ -1,6 +1,8 @@
 # macOS
 .DS_Store
-
+*.jpg
+*.png
+*.jpeg
 # Xcode 사용자별 파일/캐시
 DerivedData/
 build/
