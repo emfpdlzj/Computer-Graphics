@@ -63,7 +63,7 @@ Specular Lightening, Texture Mapping 구현<br><br>
 <img src="./HW11/과제28.png" width="50%" alt="스크린샷" />
 <img src="./HW11/과제30.png" width="50%" alt="스크린샷" />
 
-🗂️ HW12. 
-Bump mapping<br><br>
+🗂️ HW12
+Bump mapping, 바닥만들기<br><br>
 <img src="./HW12/과제32.png" width="50%" alt="스크린샷" />
 <img src="./HW12/과제33.png" width="50%" alt="스크린샷" />
