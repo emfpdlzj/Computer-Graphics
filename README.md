@@ -1,79 +1,86 @@
-🎨 Computer Graphics (2025 Fall)
+# 🎨 Computer Graphics — OpenGL Practice Collection  
+**Ajou University · Computer Graphics (2025 Fall)**
 
-아주대학교 소프트웨어학과 컴퓨터그래픽스 과목(25학년도 2학기)에서 수행한 과제 모음입니다. <br>
-OpenGL과 GLM 라이브러리를 활용하여 3D 객체 렌더링, 변환 행렬, 조명, 쉐이더 등 
-그래픽스 파이프라인의 핵심 개념을 실습 기반으로 구현하였습니다.<br><br>
-
-📚 Keywords: OpenGL, GLM, Shader, Transformation, Rendering, Computer Graphics<br>
-💻 Language: C++ <br>
-🏫 Course: Computer Graphics (Ajou Univ. / 2025 Fall) <br>
+OpenGL 기반 **3D 렌더링 파이프라인을 단계적으로 구현한 실습 프로젝트 모음**입니다.  
+행렬 변환과 카메라 제어부터 시작해,  
+조명·텍스처·쉐도우 매핑, **Poisson Disk 기반 Soft Shadow**까지 구현했습니다.
 
 ---
-#### 📁 Folder Overview <br><br>
-🗂️ HW01 / week01
 
-기초 조사 과제.
-그래픽스 관련 기술(LCD, Printing, Display, Rendering 등)을 문서로 정리했습니다.<br><br>
+## 🧠 Core Concepts
 
+- Model–View–Projection Pipeline
+- Vertex / Fragment Shader (GLSL)
+- Lighting (Lambert, Phong)
+- Texture & Bump Mapping
+- Depth Buffer & Shadow Mapping
+- Gamma Correction
+- Soft Shadow (Poisson Disk Sampling)
 
-🗂️ week0203
+---
 
-GLM 기반 행렬 변환 실습.
-모델-뷰-투영(MVP) 행렬 구성 및 시점 이동, 회전 구현.
+## 🛠️ Tech Stack
 
-사용 기술: OpenGL, GLM , GLSL><br><br>
+| Category | Stack |
+|--------|------|
+| Language | C++ |
+| Graphics API | OpenGL (Core Profile) |
+| Math | GLM |
+| Shader | GLSL |
+| Window | GLFW |
+| Model | J3A (bunny, dwarf) |
 
+---
 
-🗂️ HW0405 
+## 📁 Project Structure
 
-OpenGL 초기 실습.
-정점 버퍼(VBO), 셰이더(Shader), 색상 지정 등 기본 렌더링 파이프라인 구현.
+> 과제는 **누적 구현 방식**으로 진행되었습니다.
+```
+HW01        # Graphics 이론 조사
+week0203   # MVP 행렬 & 좌표 변환
+HW0405     # OpenGL 기본 렌더링
+HW06       # Orbit Camera
+HW07       # Lighting & 3D Model
+HW09       # Z-buffer & Hidden Surface
+HW10       # Gamma Correction
+HW11       # Texture & Specular
+HW12       # Bump Mapping
+HW13       # Shadow Mapping
+HW14       # Soft Shadow (Final)
+```
+---
 
-사용 기술: OpenGL, GLSL(Vertex/Fragment Shader), GLFW><br><br>
+## ✨ Key Highlights
 
-<img src="./HW0405/박민정_과제12.png" width="50%" alt="스크린샷" />
-🗂️ week06
+- **Shader 기반 렌더링 파이프라인 직접 구현**
+- `glm::lookAt`, `glm::perspective` 기반 카메라 제어
+- Texture & Bump Mapping (TBN Matrix)
+- Offscreen FBO를 이용한 Shadow Map 생성
+- **Poisson Disk + Randomized Sampling Soft Shadow 구현**
 
-카메라 궤도(orbit) 및 투영 행렬 계산 실습.
-glm::lookAt, glm::perspective를 활용한 3D 카메라 제어.
+---
 
-사용 기술: OpenGL, GLM, Shader, Orbit Camera Model><br><br>
-<img src="./HW06/과제18.png" width="50%" alt="스크린샷" />
+## 🖼️ Result Preview
 
-🗂️ HW07
+<img src="./HW09/과제24.png" width="45%" />  
 
-고급 그래픽스 과제.
-조명(Lambert, Phong), 반사, 회전, 3D 모델 렌더링 구현.
+*Depth Buffer & Hidden Surface Removal*
 
-사용 기술: OpenGL, GLSL Shader, GLM, 3D Model Loader(bunny.j3a)><br><br>
-<img src="./HW07/과제19.png" width="50%" alt="스크린샷" />
+<img src="./HW11/과제28.png" width="45%" />  
 
-🗂️ HW09
+*Phong Lighting & Specular Highlight*
 
-🐇 Hidden Surface Removal & Depth Buffer 적용 과제 — 정점 노멀을 활용한 3D 모델 렌더링(버니), Z-buffer 기반 가려짐 제거 및 안티앨리어싱 적용. <br><br>
-<img src="./HW09/과제23.png" width="50%" alt="스크린샷" />
-<img src="./HW09/과제24.png" width="50%" alt="스크린샷" />
+<img src="./HW14/과제38.png" width="45%" />  
 
-🗂️ HW10
+*Basic Shadow Mapping*
 
-Gamma Correction 구현 <br><br>
-<img src="./HW10/과제27.png" width="50%" alt="스크린샷" />
+<img src="./HW14/과제39.png" width="45%" />  
 
-🗂️ HW11
+*Soft Shadow (Poisson Disk Sampling)*
 
-Specular Lightening, Texture Mapping 구현<br><br>
-<img src="./HW11/과제28.png" width="50%" alt="스크린샷" />
-<img src="./HW11/과제30.png" width="50%" alt="스크린샷" />
+---
 
-🗂️ HW12
-
-Bump mapping, 바닥만들기<br><br>
-<img src="./HW12/과제32.png" width="50%" alt="스크린샷" />
-<img src="./HW12/과제33.png" width="50%" alt="스크린샷" />
-
-🗂️ HW13
-Shadow Coordinate 만들기<br>
-Shadow Map을 위한 shader 만들기<br>
-Offscreen Shadow Map<br><br>
-<img src="./HW13/과제 34.png" width="50%" alt="스크린샷" />
-<img src="./HW13/과제 35.png" width="50%" alt="스크린샷" />
+## 📌 Notes
+- OpenGL 4.1 Core Profile (macOS)
+- GLSL Shader 직접 작성
+- Xcode 기반 개발
